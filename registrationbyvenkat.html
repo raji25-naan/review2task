@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        border: 1px solid;
+        margin-left: 200px;
+        width: 500px;
+        height: 550px;
+        border-radius:25px;
+    }
+
+    #button1 {
+        margin-left: 300px;
+        background-color:grey;
+    }
+
+    #button2 {
+        margin-left: auto;
+        background-color: red;
+        
+    }
+</style>
+
+<body <div style="text-align: center" class="container">
+    <h1>Registration Form</h1>
+    </div>
+    Please fill in this form to create an account.
+
+
+    <form onsubmit="return register()">
+        <p>First Name : 
+        <input type :"text" placeholder="firstname" id="firstname"><br /></p>
+        <p>Last Name :
+    <input type :"text" placeholder="lastname" id="lastname"><br /></p>
+        <p>Username:
+        <input type="text" placeholder="username" id="username"><br /></p>
+        <p>password:
+        <input type="password" placeholder="password" id="password" value = ""></p>
+        <input type= "hidden" name = "hide" id ="hide"/>
+        <p>Confirm password
+        <input type="password" placeholder="Confirm password" id="confirm password" value =""></p>
+        <input type= "hidden" name = "hide" id ="hide"/>
+        <p>Date of birth:
+        <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1930-01-01" max="2030-12-31"></p>
+        <p>Gender:
+        <input type="radio" id="male" name = "gender" value = "male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name = "gender" value = "female"
+        <label for="female">Female</label>
+        <input type="radio" id="Others" name = "gender" value = "others"
+        <label for="others">Others</label></p>
+        <p>Country
+        <select input type="dropdown" class="textBoxDashed" placeholder="country" id="country">
+            <option value="country">select Country</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="India">India</option>
+
+        </select></p>
+
+        <p>phone number
+        <input type="text" placeholder="phone number" id="phone number"></p>
+        <p>Alternate email:
+        <input type="text" placeholder="Alternate email" id="Alternate email"><br /></p>
+        <input type="checkbox">
+        <label>By registering with us you agree to the Terms & conditions</label><br />
+        <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+    </form>
+    <!-- <script>
+        function register() {
+
+        }
+    </script> -->
+</body>
+
+</html>
